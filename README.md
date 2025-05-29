@@ -3,19 +3,15 @@
 ## GROUP 1 PROJECT 3 TEAM MEMBERS
  Project 2 presented on June 2, 2025 by Group 1 Team Members
  
- *Michael Hnidash*
- 
- *Alexander Lin*
- 
- *Nan Shi*
- 
- *Kevin Rivera*
- 
- *Sofia Frrokaj*
+ *Michael Hnidash*  
+ *Alexander Lin*  
+ *Nan Shi*   
+ *Kevin Rivera*  
+ *Sofia Frrokaj*  
  
 ### **Project Overview**
 
-## Smart Recipe Generator
+### **Smart Recipe Generator**
 A Streamlit web app that helps you create a personalized weekly meal plan based on your dietary preferences and available ingredients, with AI-powered nutrition tips.
 
 ## How the Application Works for the User
