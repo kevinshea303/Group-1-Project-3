@@ -4,9 +4,13 @@
  Project 2 presented on June 2, 2025 by Group 1 Team Members
  
  *Michael Hnidash*
+ 
  *Alexander Lin*
+ 
  *Nan Shi*
+ 
  *Kevin Rivera*
+ 
  *Sofia Frrokaj*
  
 ### **Project Overview**
