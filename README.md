@@ -15,7 +15,7 @@
  
 ### **Project Overview**
 
-#Smart Recipe Generator
+## Smart Recipe Generator
 A Streamlit web app that helps you create a personalized weekly meal plan based on your dietary preferences and available ingredients, with AI-powered nutrition tips.
 
 ## How the Application Works for the User
