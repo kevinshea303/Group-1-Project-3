@@ -4,12 +4,18 @@ import sys
 import requests
 from dotenv import load_dotenv
 from io import StringIO
+import re
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'services')))
 load_dotenv()
 
 SPOONACULAR_API_KEY = os.getenv("SPOONACULAR_API_KEY")
 BASE_URL = "https://api.spoonacular.com"
+
+def slugify(title: str, rid: int) -> str:
+    s = re.sub(r"[^a-z0-9\- ]", "", title.lower())
+    s = re.sub(r"\s+", "-", s)
+    return f"https://spoonacular.com/recipes/{s}-{rid}"
 
 def has_inventory_item(recipe, inventory):
     """Returns True if the recipe uses at least one of the user's available ingredients."""
@@ -92,7 +98,7 @@ if submitted:
                 for i, recipe in enumerate(filtered_recipes):
                     st.subheader(f"{days[i]}: {recipe['title']}")
                     st.image(recipe["image"], width=300)
-                    st.markdown(f"[📖 View Recipe](https://spoonacular.com/recipes/{recipe['id']})")
+                    st.markdown(f"[View Recipe]({slugify(recipe['title'], recipe['id'])})")
                     st.caption(f"🍽️ Used Ingredients: {', '.join([ing['name'] for ing in recipe.get('usedIngredients', [])])}")
                     plan_text.write(f"{days[i]}: {recipe['title']}\n")
 
