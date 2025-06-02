@@ -1,7 +1,7 @@
 # Group-Project-3
 ---
 ## GROUP 1 PROJECT 3 TEAM MEMBERS
- Project 2 presented on June 2, 2025 by Group 1 Team Members
+ Project 2 Presented on June 2, 2025 by Group 1 Team Members
  
  *Michael Hnidash*  
  *Alexander Lin*  
